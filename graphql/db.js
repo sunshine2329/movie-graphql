@@ -32,6 +32,6 @@ export const people = [
 ];
 
 export const getById = id => {
-  const filteredPeople = people.filter(person => people.id === id);
-  return filterPeople[0];
+  const filteredPeople = people.filter(person => person.id === String(id));
+  return filteredPeople[0];
 }
