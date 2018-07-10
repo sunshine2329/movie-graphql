@@ -6,7 +6,8 @@
   "repository": "workray<workrayz@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "graphql-yoga": "^1.14.12"
+    "graphql-yoga": "^1.14.12",
+    "node-fetch": "^2.1.2"
   },
   "scripts": {
     "start": "nodemon --exec babel-node index.js"
