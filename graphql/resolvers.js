@@ -1,12 +1,9 @@
-const workray = {
-  name: "Raymond",
-  age: 32,
-  gender: "male"
-};
+import { people, getById } from "./db";
 
 const resolvers = {
   Query: {
-    person: () => workray
+    people: () => people,
+    person: () => getById()
   }
 };
 

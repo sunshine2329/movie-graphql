@@ -1,9 +1,11 @@
-type Workray {
+type Person {
+  id: Int!
   name: String!
   age: Int!
   gender: String!
 }
 
 type Query {
-  person: Workray!
+  people: [Person]!
+  person(id: Int!): Person
 }
