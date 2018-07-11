@@ -2,20 +2,33 @@
   "name": "movieql",
   "version": "1.0.0",
   "description": "Movie API with GraphQL",
-  "main": "index.js",
+  "main": "index.mjs",
   "repository": "https://github.com/workray/movie-graphql",
   "author": "workray<workrayz@gmail.com>",
   "license": "MIT",
+  "@std/esm": {
+    "esm": "all",
+    "cjs": {
+      "extensions": true,
+      "namedExports": true,
+      "vars": true,
+      "paths": true
+    },
+    "debug": true
+  },
   "dependencies": {
+    "@std/esm": "^0.26.0",
     "axios": "^0.18.0",
     "graphql-yoga": "^1.14.12"
   },
   "scripts": {
-    "start": "nodemon --exec babel-node index.js"
+    "dev": "nodemon --exec babel-node index.mjs",
+    "start": "node --harmony -r @std/esm index.mjs --verbose"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-3": "^6.24.1"
-  }
+  },
+  "homepage": "https://movie-graphql-server.herokuapp.com/"
 }
