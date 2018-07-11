@@ -2,15 +2,17 @@
   "name": "movieql",
   "version": "1.0.0",
   "description": "Movie API with GraphQL",
-  "main": "https://github.com/workray/movie-graphql",
-  "repository": "workray<workrayz@gmail.com>",
+  "main": "index.js",
+  "repository": "https://github.com/workray/movie-graphql",
+  "author": "workray<workrayz@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.18.0",
     "graphql-yoga": "^1.14.12"
   },
   "scripts": {
-    "start": "nodemon --exec babel-node index.js"
+    "dev": "nodemon --exec babel-node index.js",
+    "start": "node index.js"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
