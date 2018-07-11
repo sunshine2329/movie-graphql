@@ -8,7 +8,7 @@ Client Code: <https://github.com/workray/movie-graphql-client>
 Client Url: <http://workray.github.io/movie-graphql-client>
 
 ## Schema
-1.type ```Movie``` {
+1. type ```Movie``` {
   id: Int!
   title: String!
   rating: Float
@@ -18,7 +18,7 @@ Client Url: <http://workray.github.io/movie-graphql-client>
   genres: [String]
 }
 
-1.type ```Query``` {
+1. type ```Query``` {
   movies(limit: Int, rating: Float): [Movie]!
   movie(id: Int!): Movie
   suggestions(id: Int!): [Movie]!
@@ -26,6 +26,6 @@ Client Url: <http://workray.github.io/movie-graphql-client>
 
 ## Resolvers
 
-1.```movies: (rating, limit)```
-1.```movie: (id)```
-1.```suggestions: (id)```
+1. ```movies: (rating, limit)```
+1. ```movie: (id)```
+1. ```suggestions: (id)```
