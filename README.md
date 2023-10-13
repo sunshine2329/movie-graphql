@@ -3,9 +3,9 @@ Movie API with GraphQL
 
 Live Server: <https://movie-graphql-server.herokuapp.com/>
 
-Client Code: <https://github.com/workray/movie-graphql-client>
+Client Code: <https://github.com/sunshine2329/movie-graphql-client>
 
-Client Url: <http://workray.github.io/movie-graphql-client>
+Client Url: <http://sunshine.github.io/movie-graphql-client>
 
 ## Schema
 ```
